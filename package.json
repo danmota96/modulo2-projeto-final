@@ -4,13 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "node index.js",
     "dev": "nodemon index.js"
+=======
+    "start": "node index",
+    "dev": "nodemon index"
+>>>>>>> 8dca06fd010897790581c79aa48b3eaa573bd2c1
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dandanm2/modulo2-projeto-final.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -21,9 +27,14 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
+<<<<<<< HEAD
     "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.3",
     "path": "^0.12.7"
+=======
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+>>>>>>> 8dca06fd010897790581c79aa48b3eaa573bd2c1
   }
 }

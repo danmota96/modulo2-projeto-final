@@ -1,10 +1,17 @@
 const express = require("express");
+<<<<<<< HEAD
+=======
+const app = express();
+const port = 3000;
+>>>>>>> 8dca06fd010897790581c79aa48b3eaa573bd2c1
 const path = require("path");
+app.use(express.static(path.join(__dirname, "public")));
 
 const app = express();
 const port = 3000;
 
 app.set("view engine", "ejs");
+<<<<<<< HEAD
 app.use(express.static(path.join(__dirname, "public")));
 
 const regioes= [
@@ -156,6 +163,13 @@ app.get("/", (req, res) => {
 
 app.get('/lista',  (req, res) => {
   res.render('lista') // Nome do arquivo, o EJS já busca dentro da pasta views.
+=======
+
+
+
+app.get("/index", (req, res) => {
+  res.render("../views/index");
+>>>>>>> 8dca06fd010897790581c79aa48b3eaa573bd2c1
 });
 
 app.listen(port, () =>
