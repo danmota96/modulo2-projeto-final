@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Document</title>
+    <title>lista</title>
 </head>
 <body>
     <header>
-        <h1>Gastronomia Brasileira</h1>
-        <nav><a href="/">Home</a></nav>
+        <h1>Comidas por Regiao</h1>
+        <nav><a href="/"></a></nav>
     </header>
     <main>
         <div class="container">
-            <% regioes.forEach(item => { %>
+            <% norte.forEach(item => { %>
                 <div class="item">
                     <h2><%= item.nome %></h2>
                     <p><%= item.descricao %></p>
-                    <a href="/regioes/<%= item.id %>"><img src="<%= item.imagem %>" alt="capa da pagina"></a>
+                    <a href="/lista/<%= item.id %>"><img src="<%= item.imagem %>" alt="lista de comidas por regiões"></a>
                 </div>
             <% }) %>
         </div>
